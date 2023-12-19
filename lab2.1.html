@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>LAB2_1</title>
+</head>
+<body>
+  
+<div class="container">
+  <form id="form">
+    <div>
+      <label for="username">ПІБ</label>
+      <input type="text" name="username" id="username" required />
+      <div class="error"></div>
+    </div>
+
+    <div>
+      <label for="phone">Телефон</label>
+      <input type="text" name="phone" id="phone" required />
+      <div class="error"></div>
+    </div>
+
+    <div>
+      <label for="idCard">ID-карта</label>
+      <input type="text" name="idCard" id="idCard" required maxlength="6" />
+      <div class="error"></div>
+    </div>
+
+    <div>
+      <label for="birthDate">Дата народження</label>
+      <input type="date" name="birthDate" id="birthDate" />
+      <div class="error"></div>
+    </div>
+
+    <div>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" />
+      <div class="error"></div>
+    </div>
+
+    <button type="submit" id="submit">Підтвердити</button>
+  </form>
+  
+  <div id="displayData"></div>
+  
+</div>
+</body>
+<script src="script.js"></script>
+</html>
